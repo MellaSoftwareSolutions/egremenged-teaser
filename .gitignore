@@ -17,12 +17,17 @@
 /.next/
 /out/
 
-# production
-/build
+# local storage
+/data/*.json
+/data
 
 # misc
 .DS_Store
 *.pem
+*service-account*.json
+*credentials*.json
+*.key.json
+*.private.key
 
 # debug
 npm-debug.log*
@@ -32,6 +37,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
 
 # vercel
 .vercel

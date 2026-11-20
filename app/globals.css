@@ -1,26 +1,50 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: var(--font-plus-jakarta), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  --color-warm-cream: #faf7f2;
+  --color-card-border: #efece6;
+  --color-input-border: #e5e1d8;
+  --color-brand-green: #16a34a;
+  --color-brand-green-emerald: #10b981;
+  --color-mint-bg: #ecfdf5;
+  --color-mint-border: #86efac;
+  --color-coral: #ff6b6b;
+  --color-coral-hover: #f25a5a;
+  --color-slate-navy: #1e293b;
+  --color-slate-heading: #0f172a;
+  --color-slate-muted: #64748b;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #faf7f2;
+  --foreground: #0f172a;
+  color-scheme: light;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  background-color: #faf7f2;
+  color: #0f172a;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #faf7f2;
+  color: #0f172a;
+  font-family: var(--font-plus-jakarta), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: #ecfdf5;
+  color: #16a34a;
+}
+
+/* Subtle warm background dot grid pattern for extra visual polish without clutter */
+.bg-warm-dots {
+  background-image: radial-gradient(rgba(15, 23, 42, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
 }
