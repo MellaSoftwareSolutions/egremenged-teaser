@@ -50,7 +50,13 @@ export function Footer() {
           </div>
 
           {/* Social & Contact Links */}
-          <div className="flex items-center gap-5">
+          <div className="flex flex-wrap items-center justify-center gap-5">
+            <a
+              href="#advouch"
+              className="flex items-center gap-1.5 hover:text-[#16A34A] transition-colors font-semibold text-[#16A34A]"
+            >
+              <span>Earn 135 ETB</span>
+            </a>
             <a
               href="https://t.me/egremenged"
               target="_blank"

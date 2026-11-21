@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
 import { HowItWorks } from "@/components/HowItWorks";
+import { AdVouchSection } from "@/components/AdVouchSection";
 import { Footer } from "@/components/Footer";
 
 export default function HomePage() {
@@ -24,9 +25,12 @@ export default function HomePage() {
 
         {/* Section 3: How It Works (3 Clean Steps with Visual Badges) */}
         <HowItWorks />
+
+        {/* Section 4: AdVouch 135 ETB Promoter Campaign */}
+        <AdVouchSection />
       </main>
 
-      {/* Section 4: Simple Trust Strip & Footer */}
+      {/* Section 5: Simple Trust Strip & Footer */}
       <Footer />
     </div>
   );

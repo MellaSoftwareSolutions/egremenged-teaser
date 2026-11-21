@@ -34,13 +34,20 @@ export function Navbar() {
           </div>
         </a>
 
-        {/* Right: Minimal 'How it works' anchor link */}
-        <div className="flex items-center gap-4">
+        {/* Right: Navigation Links */}
+        <div className="flex items-center gap-3 sm:gap-4">
           <a
             href="#how-it-works"
             className="text-xs sm:text-sm font-medium text-[#64748B] hover:text-[#0F172A] transition-colors cursor-pointer"
           >
             How it works
+          </a>
+          <a
+            href="#advouch"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#ECFDF5] border border-[#86EFAC] text-[#16A34A] text-xs font-bold hover:bg-[#DCFCE7] transition-all shadow-2xs"
+          >
+            <span>Earn 135 ETB</span>
+            <span className="w-1.5 h-1.5 rounded-full bg-[#16A34A] animate-pulse" />
           </a>
         </div>
       </div>
