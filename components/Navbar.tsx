@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Package } from "lucide-react";
+import Image from "next/image";
 
 export function Navbar() {
   return (
@@ -13,8 +13,14 @@ export function Navbar() {
           className="flex items-center gap-2.5 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#16A34A] rounded-lg p-1 -ml-1"
           aria-label="Egre Menged Home"
         >
-          <div className="w-9 h-9 rounded-xl bg-[#ECFDF5] border border-[#86EFAC] flex items-center justify-center text-[#16A34A] group-hover:scale-105 transition-transform duration-200 shadow-xs">
-            <Package className="w-5 h-5 stroke-[2.2]" />
+          <div className="w-9 h-9 rounded-xl overflow-hidden group-hover:scale-105 transition-transform duration-200">
+            <Image
+              src="/logo.webp"
+              alt="Egre Menged Logo"
+              width={36}
+              height={36}
+              className="w-full h-full object-contain"
+            />
           </div>
           <div className="flex flex-col">
             <div className="flex items-center gap-1.5">

@@ -21,6 +21,13 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://egremenged.vercel.a
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Egre Menged (እግረ መንገድ) — Turn your daily walk into extra income",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/logo-192.png", type: "image/png", sizes: "192x192" },
+    ],
+    apple: [{ url: "/logo-192.png", sizes: "192x192" }],
+  },
   description:
     "Deliver small packages along routes you already take in Addis Ababa — or send packages securely across campus and town. Fast handoffs, payment protected until drop-off.",
   keywords: [
